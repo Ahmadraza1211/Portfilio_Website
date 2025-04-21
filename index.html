@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ahmad Raza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">&lt;/&gt; Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item neon-link"><i class="fas fa-home icon"></i> Home</a></li>
+            <li><a href="#about" class="nav-item neon-link"><i class="fas fa-user icon"></i> About</a></li>
+            <li><a href="#projects" class="nav-item neon-link"><i class="fas fa-folder-open icon"></i> Projects</a></li>
+            <li><a href="#contact" class="nav-item neon-link"><i class="fas fa-envelope icon"></i> Contact</a></li>
+       <!-- In your navbar section, add this line -->
+            <li><a href="#certifications" class="nav-item neon-link"><i class="fas fa-certificate icon"></i>Certifications</a></li>
+        </ul>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()"><i class="fas fa-moon"></i></button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h3>Hello, I'm</h3>
+            <h1>Ahmad Raza</h1>
+            <h2 class="animated-text"><span id="typing"></span><span class="cursor">|</span></h2>
+            <p>
+                I'm a Undergraduate Computer Science ( CS ) student at FAST NUCES CFD with hands-on experience in C++, Python (including major Framework) , Front-end web development , and data Analyst. I am currently working on Data Science field
+            </p>
+            <div class="hero-buttons">
+                <a href="https://www.linkedin.com/in/ahmad-raza-3938382a7/" target="_blank" class="button">LinkedIn</a>
+                <a href="https://medium.com/@ahmadraza2607" target="_blank" class="button outline">Medium</a>
+            </div>
+        </div>
+        <!-- Replace the current hero-image div with this -->
+<div class="hero-image">
+  <div class="neon-border">
+      <div class="image-slider">
+          <img src="./boitumelo-0DJHJcpwN9Q-unsplash.jpg" alt="Developer working" class="active">
+          <img src="./markus-spiske-jG8nlwLRZTM-unsplash.jpg" alt="Coding on laptop" class="inactive">
+          <img src="./max-duzij-qAjJk-un3BI-unsplash.jpg" alt="Code closeup" class="inactive">
+          <img src="./kevin-ku-w7ZyuGYNpRQ-unsplash.jpg" alt="Laptop coding" class="inactive">
+          <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3" alt="Mobile development" class="inactive">
+      </div>
+  </div>
+</div>
+    </section>
+
+<!-- Animated Gradient Text Section (New) -->
+<section class="gradient-text-section">
+    <div class="gradient-text-container">
+        <div class="gradient-text">Front-End Developer</div>
+        <div class="gradient-text">Python Developer</div>
+        <div class="gradient-text">Data Analyst</div>
+    </div>
+</section>
+
+
+
+
+
+    <section class="skills-section" id="skills">
+        <h2 class="section-title">My Skillset</h2>
+        
+        <!-- Floating Icons -->
+        <div class="floating-icons">
+          <i class="fab fa-github"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-react"></i>
+          <i class="fab fa-node-js"></i>
+          <i class="fab fa-python"></i>
+        </div>
+        
+        <div class="skills-container">
+          <div class="skill-slide" data-index="0">
+            <h3>Front-End Development</h3>
+            <ul class="skill-points">
+              <li>
+                <div class="skill-name-wrapper">
+                  HTML & CSS & Tailwind <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-percent="90"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-name-wrapper">
+                  JavaScript <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-percent="85"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-name-wrapper">
+                  React <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-percent="80"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-slide" data-index="1">
+            <h3>Python Development</h3>
+            <ul class="skill-points">
+              <li>
+                <div class="skill-name-wrapper">
+                  Python Basics <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-percent="85"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-name-wrapper">
+                  PyGame , TensorFlow <span class="skill-percent">75%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-percent="75"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-name-wrapper">
+                  Libraries ( NumPy, Pandas, BeautifulSoup) <span class="skill-percent">70%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-percent="70"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-slide" data-index="2">
+            <h3>Data Analyst</h3>
+            <ul class="skill-points">
+              <li>
+                <div class="skill-name-wrapper">
+                  Data Visualization (PowerBI) <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-percent="80"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-name-wrapper">
+                  SQL Queries <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-percent="85"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-name-wrapper">
+                  Statistical Analysis ( Excel ) <span class="skill-percent">70%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-percent="70"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-slide" data-index="3">
+            <h3>Data Science</h3>
+            <ul class="skill-points">
+              <li>
+                <div class="skill-name-wrapper">
+                  Inferential Statistics (Working) <span class="skill-percent">70%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-percent="70"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-name-wrapper">
+                  ML Regression and Classification (Working) <span class="skill-percent">65%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-percent="65"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-name-wrapper">
+                  Boosting Algorithms (Working) <span class="skill-percent">60%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-percent="60"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Add this div at the end of your body, just before closing </body> tag -->
+      <div class="cursor-neon"></div>
+  
+    
+    <!-- Projects Section -->
+<section class="projects-section" id="projects">
+    <h2 class="project-title">My Projects</h2>
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-content">
+                <img src="./Drum.jpg" alt="Project 1" class="project-image" />
+                <h3>Desi Dhool Drum Kit</h3>
+                <p>A simple HTML/CSS/JS  where major focus on JS EventListener . This minor Project is inspire by Dr. Angela Yu</p>
+                <hr class="project-divider" />
+                <div class="project-links">
+                    <a href="https://github.com" target="_blank" class="project-icon code-icon">
+                        <i class="fas fa-code"></i> Code
+                    </a>
+                    <a href="https://medium.com/@ahmadraza2607/desi-dhool-drum-kit-2a798092066a" target="_blank" class="project-icon preview-icon">
+                        <i class="fas fa-eye"></i> Preview
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-content">
+                <img src="./p2.jpg" alt="Project 2" class="project-image" />
+                <h3>Portfolio Website</h3>
+                <p>A responsive portfolio website showcasing my projects, skills, and experience, built with HTML, CSS, and JavaScript.</p>
+                <hr class="project-divider" />
+                <div class="project-links">
+                    <a href="https://github.com" target="_blank" class="project-icon code-icon">
+                        <i class="fas fa-code"></i> Code
+                    </a>
+                    <a href="https://medium.com/@ahmadraza2607/portfolio-website-1dc0e31712b7" target="_blank" class="project-icon preview-icon">
+                        <i class="fas fa-eye"></i> Preview
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="project-content">
+                <img src="./ML.jpg" alt="Project 3" class="project-image" />
+                <h3>ML Model Training</h3>
+                <p>Analyze the Algeria forest fire dataset by performing
+                   EDA and training a predictive model using simple and multiple regression techniques</p>
+                <hr class="project-divider" />
+                <div class="project-links">
+                    <a href="https://github.com/Ahmadraza1211/Algeria_Forest_Analysis" target="_blank" class="project-icon code-icon">
+                        <i class="fas fa-code"></i> Code
+                    </a>
+                    <a href="https://medium.com/@ahmadraza2607/algeria-forest-fires-analysis-01b367f382c6" target="_blank" class="project-icon preview-icon">
+                        <i class="fas fa-eye"></i> Preview
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card">
+            <div class="project-content">
+                <img src="./ds.jpg" alt="Project 4" class="project-image" />
+                <h3>Dictionary_Search</h3>
+                <p>Dictionary Search Project using C++ base upon  Data Structure Algorithm also with File Handling </p>
+                <hr class="project-divider" />
+                <div class="project-links">
+                    <a href="https://github.com/Ahmadraza1211/Dictionary_Search" target="_blank" class="project-icon code-icon">
+                        <i class="fas fa-code"></i> Code
+                    </a>
+                    <a href="https://medium.com/@ahmadraza2607/airline-management-system-6c8a918e7ab4" target="_blank" class="project-icon preview-icon">
+                        <i class="fas fa-eye"></i> Preview
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-card">
+            <div class="project-content">
+                <img src="./p5.jpg" alt="Project 5" class="project-image" />
+                <h3>Gear Glide Rally</h3>
+                <p>Our game is a basic car racing game where the player controls a car moving along a road. 
+                  The objective is to navigate through obstacles (hurdles).</p>
+                <hr class="project-divider" />
+                <div class="project-links">
+                    <a href="https://github.com/Ahmadraza1211/Dictionary_Search" target="_blank" class="project-icon code-icon">
+                        <i class="fas fa-code"></i> Code
+                    </a>
+                    <a href="https://medium.com/@ahmadraza2607/gear-glide-rally-b9ba94ba88d8" target="_blank" class="project-icon preview-icon">
+                        <i class="fas fa-eye"></i> Preview
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="about-section" id="about">
+  <div class="about-container">
+      <!-- Vertical Line with Neon Red Glow -->
+      <div class="divider-line"></div>
+      <!-- Animated Dots -->
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <!-- Left Side: Sliding Text Points (Two at a Time) -->
+      <div class="about-left">
+          <h2>Why Choose Me?</h2>
+          <div class="slide-container">
+              <div class="slide-point" data-index="0">
+                  <i class="fas fa-code"></i>
+                  <p>Hands-On Coding : Expertise in  C++ , C  and Python.</p>
+              </div>
+              <div class="slide-point" data-index="1">
+                  <i class="fas fa-rocket"></i>
+                  <p>Front-End Developement: Building responsive and impactful web interfaces.</p>
+              </div>
+              <div class="slide-point" data-index="2">
+                  <i class="fas fa-users"></i>
+                  <p>Community Driven: Love sharing knowledge on LinkedIn.</p>
+              </div>
+              <div class="slide-point" data-index="3">
+                  <i class="fas fa-laptop-code"></i>
+                  <p>Data Analyst: Extracting insights from complex datasets</p>
+              </div>
+              <div class="slide-point" data-index="4">
+                  <i class="fas fa-brain"></i>
+                  <p>Data Scientist: Specializing in regression and classification models.</p>
+              </div>
+          </div>
+          <!-- Circles with Revolving Dots (Horizontal Layout) -->
+          <div class="circle-stats">
+              <div class="circle">
+                  <span class="circle-text">3 Years <br> of CS experience</span>
+                  <span class="revolving-dot"></span>
+              </div>
+              <div class="circle">
+                  <span class="circle-text">40 + <br>LeetCode Problem</span>
+                  <span class="revolving-dot"></span>
+              </div>
+              <div class="circle">
+                  <span class="circle-text">Experience<br>in Front-End Dev</span>
+                  <span class="revolving-dot"></span>
+              </div>
+          </div>
+      </div>
+      <!-- Right Side: Detailed Text -->
+      <div class="about-right">
+          <h2>Get to Know Me!</h2>
+        <p>I'm <strong>Ahmad Raza</strong> Undergraduate <strong> Computer Science (CS) </strong> student at FAST NUCES CFD, 
+          with Acedimic Experience by hands-on projects and coursework, I’ve built a solid foundation across various technical areas . 
+          My expertise includes <strong>Data Analyst</strong>, where I thrive at extracting meaningful insights from intricate datasets,
+           and <strong>Front-End Development</strong>, where I focus on designing responsive, intuitive web interfaces to improve user experiences. 
+           Additionally, I’m actively engaged in <strong>Data Science</strong>, concentrating on developing regression and classification models 
+           to tackle real-world challenges.
+           I’m also exploring <strong>ML Model Training</strong>,
+         working on projects that leverage my analytical abilities to create innovative tech solutions.
+          <ul class="about-details">
+              <li><strong>📍 Location:</strong> Faisalabad, Pakistan</li>
+              <li><strong>🎓 Degree:</strong> B.S. Computer Science</li>
+          </ul>
+          <a href="./Ahmad_Raza_Resume.pdf" class="resume-btn" download="Ahmad_Raza_Resume.pdf">📄 Download Resume</a>
+      </div>
+  </div>
+</section>
+
+
+<section class="certifications-section" id="certifications">
+    <h2 class="section-title">My Certifications</h2>
+    
+    <div class="certifications-container">
+      <div class="certification-card">
+        <div class="certification-preview">
+          <i class="fas fa-file-pdf"></i>
+          <div class="certification-overlay">
+            <span>View PDF</span>
+          </div>
+        </div>
+        <div class="certification-info">
+          <h3> Web Development  (Google) </h3>
+          <p> Prepare Data for Exploration</p>
+          <span class="certification-date">Issued: July 2024</span>
+        </div>
+        <a href="./Coursea1.pdf" class="pdf-link" target="_blank"></a>
+      </div>
+      
+      <div class="certification-card">
+        <div class="certification-preview">
+          <i class="fas fa-file-pdf"></i>
+          <div class="certification-overlay">
+            <span>View PDF</span>
+          </div>
+        </div>
+        <div class="certification-info">
+          <h3>Data Cleaning  (Google)  </h3>
+          <p>Process Data from Dirty to Clean</p>
+          <span class="certification-date">Issued: April 2024</span>
+        </div>
+        <a href="./coursea4.pdf" class="pdf-link" target="_blank"></a>
+      </div>
+      
+      <div class="certification-card">
+        <div class="certification-preview">
+          <i class="fas fa-file-pdf"></i>
+          <div class="certification-overlay">
+            <span>View PDF</span>
+          </div>
+        </div>
+        <div class="certification-info">
+          <h3>Data Decisions <br> (Google)  </h3>
+          <p>Ask Questions to Make Data-Driven Decisions</p>
+          <span class="certification-date">Issued: 3 July 2024</span>
+        </div>
+        <a href="./Coursera 5VPQVYNWQHYP.pdf" class="pdf-link" target="_blank"></a>
+      </div>
+      
+      <div class="certification-card">
+        <div class="certification-preview">
+          <i class="fas fa-file-pdf"></i>
+          <div class="certification-overlay">
+            <span>View PDF</span>
+          </div>
+        </div>
+        <div class="certification-info">
+          <h3>Data Processing  <br>(Google)  </h3>
+          <p> Foundations: Data, Data, Everywhere</p>
+          <span class="certification-date">Issued: Jul 2024</span>
+        </div>
+        <a href="./Coursera3.pdf" class="pdf-link" target="_blank"></a>
+      </div>
+      
+      <div class="certification-card">
+        <div class="certification-preview">
+          <i class="fas fa-file-pdf"></i>
+          <div class="certification-overlay">
+            <span>View PDF</span>
+          </div>
+        </div>
+        <div class="certification-info">
+          <h3>Data Science (Working)</h3>
+          <p>Complete Data Science,Machine Learning,DL,NLP Bootcamp</p>
+          <span class="certification-date">Issued: continue</span>
+        </div>
+        <a href="https://www.udemy.com/course/complete-machine-learning-nlp-bootcamp-mlops-deployment/?couponCode=LETSLEARNNOW" class="pdf-link" target="_blank"></a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p>Feel free to reach out to me for any questions or opportunities!</p>
+        
+        <ul class="contact-details">
+          <li>
+            <div class="sticker-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <span> FAST NUCES Cfd-chinot Campus</span>
+          </li>
+          <li>
+            <div class="sticker-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <a href="mailto:ahmadraza2607@gmail.com">ahmadraza2607@gmail.com</a>
+          </li>
+          <li>
+            <div class="sticker-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <span>Available: 9 AM - 6 PM (Mon-Fri)</span>
+          </li>
+          <li>
+            <div class="sticker-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <a href="https://linkedin.com/in/ahmadraza" target="_blank">linkedin.com/in/ahmadraza</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <div class="error-message" id="emailError"></div>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="send-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>&lt;/&gt; Ahmad Raza</h3>
+                <p>Creating digital experiences that matter</p>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/ahmad-raza-3938382a7/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ahmadraza1211" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2021-2025 Ahmad Raza. All Rights Reserved. Made with <i class="fas fa-heart"></i> by Mr .Ahmad Raza</p>
+            </div>
+        </div>
+    </footer>    
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</body>
+</html>
