@@ -11,14 +11,6 @@
   </head>
   <body class="bg-dark-navy text-white">
     <div id="root"></div>
-    <script>
-      window.addEventListener('error', function(e) {
-        document.body.innerHTML += '<div style="color:red; background:white; z-index:9999; position:fixed; top:0; left:0; padding:20px;">Error: ' + e.message + '<br>' + (e.error ? e.error.stack : '') + '</div>';
-      });
-      window.addEventListener('unhandledrejection', function(e) {
-        document.body.innerHTML += '<div style="color:red; background:white; z-index:9999; position:fixed; top:0; left:0; padding:20px;">Promise Rejection: ' + e.reason + '</div>';
-      });
-    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
