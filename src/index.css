@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-navy: #1A1A24;
+  --color-dark-purple: #2A2A35;
+  --color-silver: #E0E0E0;
+  --color-gold: #C5A880;
+  --color-card-bg: #1E1E2A;
+
+  --font-orbitron: 'Orbitron', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-navy text-silver font-inter m-0 p-0 overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-orbitron text-white;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-dark-purple/60 backdrop-blur-md border border-white/10 rounded-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] relative overflow-hidden;
+  }
+  
+  .glass-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none;
+  }
+  
+  .neon-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-silver to-white drop-shadow-[0_0_8px_rgba(255,255,255,0.4)];
+  }
+
+  .gold-accent-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-gold to-[#E2C792] drop-shadow-[0_0_8px_rgba(197,168,128,0.4)];
+  }
+
+  .floating-dock {
+    @apply fixed bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-4 px-6 py-3 bg-dark-purple/80 backdrop-blur-lg border border-white/10 rounded-full shadow-[0_8px_32px_0_rgba(0,0,0,0.5)] z-50;
+  }
+
+  .dock-item {
+    @apply text-silver/70 hover:text-white transition-all duration-300 hover:-translate-y-2 hover:scale-110 flex flex-col items-center justify-center relative w-10 h-10;
+  }
+
+  .dock-item.active {
+    @apply text-gold drop-shadow-[0_0_8px_rgba(197,168,128,0.6)];
+  }
+
+  .dock-tooltip {
+    @apply absolute -top-10 bg-dark-navy px-3 py-1 rounded text-xs font-semibold opacity-0 transition-opacity duration-300 pointer-events-none border border-white/10;
+  }
+  
+  .dock-item:hover .dock-tooltip {
+    @apply opacity-100;
+  }
+
+  @keyframes scrollDown {
+    from { top: -20%; }
+    to { top: 120%; }
+  }
+
+  .animate-scroll-down {
+    animation: scrollDown 25s linear infinite;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1A1A24;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A35;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A880;
+}

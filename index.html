@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <title>Ahmad Raza - Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body class="bg-dark-navy text-white">
+    <div id="root"></div>
+    <script>
+      window.addEventListener('error', function(e) {
+        document.body.innerHTML += '<div style="color:red; background:white; z-index:9999; position:fixed; top:0; left:0; padding:20px;">Error: ' + e.message + '<br>' + (e.error ? e.error.stack : '') + '</div>';
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        document.body.innerHTML += '<div style="color:red; background:white; z-index:9999; position:fixed; top:0; left:0; padding:20px;">Promise Rejection: ' + e.reason + '</div>';
+      });
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
